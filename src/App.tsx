@@ -55,7 +55,7 @@ function App() {
   useEffect(() => {
     const controller = new AbortController();
 
-    fetch("/api/catalog", { signal: controller.signal })
+    fetch("https://nexup-api.rgorev00.workers.dev/api/catalog", { signal: controller.signal })
       .then((response) => {
         if (!response.ok) throw new Error("Catalog request failed");
         return response.json() as Promise<CatalogResponse>;
