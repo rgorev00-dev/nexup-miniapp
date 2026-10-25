@@ -320,3 +320,242 @@ button:focus-visible { outline: 2px solid #55aaff; outline-offset: 3px; }
     transition-duration: .01ms !important;
   }
 }
+/* NEXUP RESPONSIVE DESKTOP LAYOUT */
+
+/* Medium screens and tablets */
+@media (min-width: 700px) {
+  .app-shell {
+    width: min(100%, 1000px);
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 120px;
+  }
+
+  .topbar {
+    height: 88px;
+  }
+
+  .brand-name {
+    font-size: 20px;
+  }
+
+  .online-indicator {
+    font-size: 11px;
+  }
+
+  .hero {
+    min-height: 320px;
+    padding: 36px;
+    border-radius: 28px;
+  }
+
+  .hero-copy {
+    max-width: 65%;
+  }
+
+  .hero h1 {
+    font-size: clamp(38px, 4vw, 52px);
+  }
+
+  .hero-copy p {
+    font-size: 14px;
+    max-width: 440px;
+  }
+
+  .hero-mascot {
+    width: 190px;
+    height: 190px;
+    right: 28px;
+    top: 58px;
+    transform: scale(1.2);
+  }
+
+  .hero-glow {
+    width: 300px;
+    height: 300px;
+    right: -50px;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+  }
+
+  .button {
+    min-height: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13px;
+  }
+
+  .page-content {
+    gap: 38px;
+  }
+
+  .section-heading {
+    margin-bottom: 20px;
+  }
+
+  .section-kicker {
+    font-size: 10px;
+  }
+
+  .section-heading h2 {
+    font-size: 28px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .category-card {
+    min-height: 112px;
+    padding: 16px;
+    gap: 12px;
+    border-radius: 19px;
+  }
+
+  .category-symbol {
+    width: 44px;
+    height: 46px;
+    flex-basis: 44px;
+    font-size: 15px;
+  }
+
+  .category-text strong {
+    font-size: 12px;
+  }
+
+  .category-text small {
+    font-size: 10px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .product-art {
+    height: 150px;
+  }
+
+  .product-art-label {
+    font-size: 42px;
+  }
+
+  .product-info {
+    padding: 16px;
+  }
+
+  .product-name {
+    font-size: 16px;
+  }
+
+  .product-caption {
+    font-size: 10px;
+  }
+
+  .product-price {
+    font-size: 18px;
+  }
+
+  .add-button {
+    width: 36px;
+    height: 36px;
+    flex-basis: 36px;
+  }
+
+  .bottom-nav {
+    width: min(calc(100% - 48px), 936px);
+    bottom: 16px;
+    padding: 12px 20px;
+    border: 1px solid #26364c;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px #0007;
+  }
+
+  .nav-item {
+    gap: 7px;
+    padding: 8px;
+    font-size: 11px;
+  }
+
+  .nav-icon {
+    font-size: 21px;
+  }
+
+  .selection-backdrop {
+    align-items: center;
+  }
+
+  .selection-panel {
+    width: min(100%, 540px);
+    padding: 30px;
+  }
+}
+
+/* Wide desktop screens */
+@media (min-width: 1100px) {
+  .app-shell {
+    width: min(100%, 1240px);
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .topbar {
+    height: 96px;
+  }
+
+  .hero {
+    min-height: 350px;
+    padding: 42px;
+  }
+
+  .hero h1 {
+    font-size: 54px;
+  }
+
+  .hero-mascot {
+    right: 70px;
+    transform: scale(1.4);
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .product-art {
+    height: 165px;
+  }
+
+  .product-info {
+    padding: 18px;
+  }
+
+  .bottom-nav {
+    width: min(calc(100% - 80px), 1160px);
+  }
+}
+
+/* Keep the layout comfortable on small phones */
+@media (max-width: 519px) {
+  .app-shell {
+    width: 100%;
+  }
+
+  .bottom-nav {
+    width: 100%;
+  }
+}
+
+/* Desktop hover effects only on devices that support hover */
+@media (hover: hover) and (pointer: fine) {
+  .product-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .category-card:hover {
+    transform: translateY(-2px);
+  }
+}
